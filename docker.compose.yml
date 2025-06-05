@@ -89,6 +89,9 @@ services:
     depends_on:
       - prometheus
     restart: always
+    volumes:
+      - grafana_data:/var/lib/grafana
 
 volumes:
   pg_data:
+  grafana_data:
